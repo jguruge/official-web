@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { Menu, X, Sparkle } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import logo from '../../assets/seds-logo.png';
 
 const Navbar = () => {
@@ -32,17 +32,11 @@ const Navbar = () => {
             key={item.path}
             to={item.path}
             className={({ isActive }) =>
-              `nav-link relative flex flex-col items-center ${isActive ? 'active text-glow' : ''}`
+              `nav-link relative flex flex-col items-center ${isActive ? 'active' : ''}`
             }
           >
             {({ isActive }) => (
               <>
-                {isActive && (
-                  <Sparkle
-                    size={14}
-                    className="indicator-icon absolute -top-4 animate-pulse"
-                  />
-                )}
                 {item.name}
               </>
             )}

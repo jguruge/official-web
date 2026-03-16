@@ -103,14 +103,15 @@
 
 /* Navbar */
 .navbar-pill {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(112, 91, 114, 0.4) 100%);
-  border: 1px solid rgba(224, 182, 228, 0.2);
+  position: relative;
+  background: #050505;
   backdrop-filter: blur(12px);
   border-radius: 9999px;
-  padding: 0.75rem 2rem;
+  padding: 0.6rem 2.8rem;
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 3.2rem;
+  border: 1px solid rgba(224, 182, 228, 0.2);
 }
 
 .active-indicator {
@@ -124,16 +125,16 @@
 .nav-link {
   font-family: 'Rajdhani', sans-serif;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: #ffffff;
   transition: all 0.3s ease;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .nav-link:hover,
 .nav-link.active {
   opacity: 1;
-  color: var(--navbar-accent);
+  color: #ffffff;
 }
 
 .indicator-icon {
