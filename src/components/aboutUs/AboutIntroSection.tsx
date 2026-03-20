@@ -4,12 +4,12 @@ import planets from "../../assets/globals.svg";
 const AboutIntroSection: React.FC = () => {
   return (
     <section id="about" className="w-full py-32 px-6 md:px-20">
-      <div className="grid md:grid-cols-2 gap-10 items-start">
+      <div className="grid md:grid-cols-[1.2fr_0.8fr] gap-6 items-start">
 
         {/* LEFT COLUMN */}
         <div className="max-w-xl">
           <h2
-            className="text-5xl md:text-6xl font-light text-white mb-6 tracking-widest"
+            className="text-5xl md:text-6xl font-light text-white mb-6 tracking-widest leading-tight"
             style={{ fontFamily: "'Exo 2', 'Rajdhani', sans-serif" }}
           >
             ABOUT US
@@ -26,11 +26,11 @@ const AboutIntroSection: React.FC = () => {
         </div>
 
         {/* RIGHT COLUMN */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center md:justify-start">
           <img
             src={planets}
             alt="planet stack"
-            className="w-[280px] md:w-[420px] object-contain"
+            className="w-[280px] md:w-[420px] object-contain md:-ml-20 md:mt-6 drop-shadow-[0_0_80px_rgba(255,255,255,0.15)]"
           />
         </div>
 
