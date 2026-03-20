@@ -1,8 +1,10 @@
-// import Intro from './aboutUs/Intro';
+
+import AboutIntroSection from './aboutUs/AboutIntroSection';
+
 const AboutPage = () => {
   return (
     <div className="pt-24 min-h-screen bg-black">
-      {/* <Intro /> */}
+      <AboutIntroSection />
       {/* You can add more about sections here later */}
     </div>
   );
